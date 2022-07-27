@@ -7,9 +7,9 @@ To run model use:
 docker run -it --rm --name modelexec --env-file dockerdeploy/models/docker.env deploymodel:latest python3 /app/<MODEL_NAME>.py 62cac1e8dc6b0630c969e513 <FILE_NAME>.xlsx <NUM_CLUSTERS>
 ```
 where:
-- <MODEL_NAME>.py = name of the Python script with the model
-- <FILE_NAME>.xlsx = Excel file with the data (two columns `id` and `text`)
-- <NUM_CLUSTERS> = number of the clusters, required only for LDA and Deep K-Means models
+- `<MODEL_NAME>.py` = name of the Python script with the model
+- `<FILE_NAME>.xlsx` = Excel file with the data (two columns `id` and `text`)
+- `<NUM_CLUSTERS>` = number of the clusters, required only for LDA and Deep K-Means models
 
 Example of `docker.env` file:
 ```
